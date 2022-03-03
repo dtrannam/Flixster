@@ -15,13 +15,6 @@ private const val URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<Movie>()
     private lateinit var rvMovies: RecyclerView
-
-//    Define a model class to use as the data source - Done
-//    Add a RecyclerView to your activity to display the items - Done
-//    Create a custom row layout XML file to visualize the item - Done
-//    Create a RecyclerView.Adapter and ViewHolder to render the item  Done
-//    Bind the adapter to the data source to populate the RecyclerView
-
     val movieAdapter = MovieAdapter(this, movies)
 
     override fun onCreate(savedInstanceState: Bundle?) {
